@@ -1,9 +1,10 @@
-import React from 'react';
+
 import Tindog from './Image/Tindog project.jpg';
 import img1 from './Image/img1.png';
 import img2 from './Image/calc-app.jpg';
 import img3 from './Image/The todo app.jpg';
 import img4 from './Image/websiteperso.jpg';
+
 
 const projects = [
     {
@@ -73,39 +74,5 @@ making it easier for dog owner to find friend for their dogs.`,
         code: `"https://github.com/FabiolaKammi/TODO-APP.git"`
     }
     
-];
-
-
-
-const ProjectForm = () => {
-
-  return (
-    
-    <div className='row'>
-        
-        {projects.map((item, i) => {
-          return (
-            <div key={i} className='project-form'>
-       <img src={item.photo} alt={item.title} width="300" height="300" />
-        <h3>{item.title}</h3>
-        <h5>{item.info}</h5>
-        <ul>
-          <li>
-            <button className='project-button'>
-              <a href={item.code}>Code</a>
-            </button>
-          </li>
-          <li>
-            <button className='project-button'>
-              <a href={item.link}>Website</a>
-            </button>
-          </li>
-        </ul>
-            </div>
-          )
-        })}
-    </div>)
-}
-
-export default ProjectForm;
+]
 

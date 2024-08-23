@@ -1,35 +1,130 @@
-.App {
-   
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Foldit:wght@100..900&family=Ga+Maamli&family=Jersey+10&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=New+Amsterdam&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+FR+Moderne:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
-header {
-    background-color: #f9cece;
-    color: #111;
-    height: 20rem;
-}
-
-Body {
-    background-color: #f9cece;
+  
+main {
     color: #111; 
-    font-family: Roboto, serif;
+    font-family:'PT Sans Narrow';
     font-size: 20px;
-    height: 60rem;
+    border: 5px solid;
+    background-color: #fff;
+}
+Header {
+    margin: 0;
+}
 
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #efc6c6;
+    color: #111;
+    height: 10vh;
+    margin: 0;
+    border-radius: 10px;
 }
-footer {
-    height: 20rem;
-}
-section {
+
+nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 50px;
 }
 
-ul {
+.body-container {
+    background-color: #f4e6e6;
+    color: #111; 
+    align-items: center;
+    text-align: center;
+  
+}
+.about-section {
+    text-align: center;
+    background-image: linear-gradient(#b68a8a);
+    align-items: center;
+    margin-top: -50px;
+    
+}
+.img-div {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+    background-color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;      
+}
+h4 {
+    margin-bottom: 30px;
+    height: 50px;
+    width:  500px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+div p {
+    margin-bottom: 20px;
+    font-weight: 200;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    
+}
+
+.projects-section{
+    
+    margin-top: -20px;
+    background-image: #fff;
+    
+}
+.row {
+display: grid;
+grid-template-rows: repeat(4 1fr);
+gap: 10px;
+}
+.project-form {
+    align-items: center;
+    background-color: #fff;
+    margin-top: 10px;
+    border:1px solid #000;
+    border: 5px ; 
+    margin-bottom: 50px;
+}
+.project-button {
+    background-color:#5c80f6 ;
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 5px;
+   
+    font-size: 25px;
+    font-weight: 500;
+    position:absolute; bottom:0; right: 100px;
+}
+.contacts-div {
+    height: 20rem;
+    background-color: #514e4e;
+    
+}
+
+
+.contacts-div section ul {
     display: flex;
     justify-content:space-between ;
     align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
 }
  
 
@@ -39,9 +134,36 @@ FaLinkedin {
     height: 25px ;
     width: 25px;
 }
+.resume-section {
+    margin-top: -50px;
+    background-color: #b68a8a;
+}
 
-ul {
+.resume-section button {
+    background-color:#5c80f6 ;
+    height: 70px;
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    
+    text-decoration: none;
+}
+a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #111;
+}
+.footer-div {
+    margin-top: -40px;
+    background-color: #918d8d;
+    color: #111;
+    font-size: 40px;
+    height: 250px;
+}
+.footer-div ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    list-style: none;
+    padding-top: 125px;
 }

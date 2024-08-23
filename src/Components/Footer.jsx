@@ -1,29 +1,16 @@
-import React from 'react'
-import { FaLinkedin } from "react-icons/fa";
-import { IoIosPhonePortrait } from "react-icons/io";
-import { IoMdMail } from "react-icons/io";
+import React from 'react';
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
 
 const Footer = () => {
-    const contact = "Phone: +12407897619";
-    const email = "fabiolazoubet@gmail.com";
-    const linkedIn = "linkedIn/fabiolakammi"
-    
+    const today = new Date();
+    const year = today.getFullYear();
   return (
-    
-    <section>
-        <ul>
-            <li>{<IoIosPhonePortrait />}</li>
-            <li>{contact}</li>
-        </ul>
-        <ul>
-            <li>{<IoMdMail />}</li>
-            <li>{email}</li>
-        </ul>
-        <ul>
-            <li>{<FaLinkedin />}</li>
-            <li>{linkedIn}</li>
-        </ul>
-    </section>
+    <div className='footer-div'>
+      <ul>
+        <li><MdOutlineTipsAndUpdates width="30px" height="30px"/></li>
+        <li>{year} Companyn Inc</li>
+      </ul>
+    </div>
   )
 }
 
